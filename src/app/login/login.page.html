@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content  >
+    <ion-card-header  color="gris" text-rigth>
+        <ion-label color="medium">  Si tienes una cuenta con nosotros, inicia sesión. </ion-label> 
+        <p>
+            <ion-label color="medium"> *Campos requeridos </ion-label>
+        </p> 
+    </ion-card-header>
+
+    <ion-card-content>
+        <form [formGroup]="persona" (ngSubmit)="sendData()">
+            <ion-list no-Line>
+                <ion-item> 
+                    <ion-input type="text"  formControlName="user" placeholder="Usuario o Correo Electronico "></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="password" formControlName="password" placeholder="Contraseña"></ion-input>
+                </ion-item>
+            </ion-list>
+        </form>
+        
+      <br>
+  
+        <ion-grid class="botonera">
+          
+        <ion-button ion-button block color="primary" routerLink="/home" text-align="left">Regresar</ion-button> 
+        <ion-button ion-button block color="primary" text-align="center">Ingresar</ion-button>   
+        
+        </ion-grid>
+       
+        <ion-list>
+            <ion-row class="desplazada">
+                <ion-col>
+                    <ion-label color="primary"><b>Crear Cuenta</b></ion-label>
+                </ion-col>
+                <ion-col>
+                    <ion-label color="primary"><b>Recuperar Contraseña</b></ion-label>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </ion-card-content>
+    
+</ion-content>

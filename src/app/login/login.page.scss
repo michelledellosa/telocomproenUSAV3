@@ -1,0 +1,19 @@
+.desplazada{
+    position: relative;
+    top: 2em;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+.ion-color-gris {
+    --ion-color-base: var(--ion-color-gris);
+    --ion-color-base-rgb: var(--ion-color-gris-rgb);
+    --ion-color-contrast: var(--ion-color-gris-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-gris-contrast-rgb);
+    --ion-color-shade: var(--ion-color-gris-shade);
+    --ion-color-tint: var(--ion-color-gris-tint);
+  }

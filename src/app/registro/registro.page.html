@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-left >REGISTRO DE USUARIO</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="desplazada" text-left >
+
+    <ion-card-content>
+        <ion-list no-Line>
+            <ion-item>
+                <ion-input input="text" placeholder="Nombre "></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input input="text" placeholder="Apellido"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input input="text" placeholder="Correo Electronico"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input input="text" placeholder="Contraseña"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input input="text" placeholder="Confirmar Contraseña"></ion-input>
+            </ion-item>
+            
+            <ion-item>
+                <ion-label>Suscribirme al Boletín</ion-label>
+                <ion-checkbox color="light"  [(ngModel)]="valida" (click)="validate()"></ion-checkbox>
+            </ion-item>
+            
+            
+            <ion-item>
+                <ion-label>Acepto los Terminos y Condiciones</ion-label>
+                <ion-checkbox color="light"  [(ngModel)]="valida" (click)="validate()"></ion-checkbox>
+            </ion-item>
+            
+            <ion-button ion-button block color="primary">Registrar</ion-button>  
+            
+            </ion-list>
+         
+    </ion-card-content>
